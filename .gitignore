@@ -1,0 +1,21 @@
+# Secrets and per-install state -- never commit
+.env
+credentials.json
+*.db
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+cli/bin/
+
+# Local media store
+media/

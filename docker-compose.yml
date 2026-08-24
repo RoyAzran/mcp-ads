@@ -1,0 +1,12 @@
+services:
+  mcp-ads:
+    build: .
+    env_file: .env
+    ports:
+      # Published on loopback only; change deliberately if you front it with auth.
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - mcp-ads-home:/root/.mcp-ads
+
+volumes:
+  mcp-ads-home:

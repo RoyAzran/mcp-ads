@@ -1,0 +1,87 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Compile all Python
+        run: python -m py_compile $(git ls-files '*.py')
+
+      # The public tree must never grow a dependency on the private deployment,
+      # a hosted identifier, or anything shaped like a credential.
+      - name: Boundary and secret gate
+        run: python tests/test_no_private_imports.py
+
+      # Registry-shaped tests cannot see a call-time failure; this dispatches
+      # real tools through the registry and fails on plumbing errors.
+      - name: Check tools actually execute
+        run: python scripts/check_tools_execute.py
+
+      - name: Check tool collisions
+        run: python scripts/check_tool_collisions.py
+
+      - name: Check credential provider contract
+        run: python scripts/check_credential_provider.py
+
+      - name: Check param handling
+        run: python scripts/check_param_handling.py
+
+      - name: Check geo targeting
+        run: python scripts/check_geo_targeting.py
+
+      - name: Check ad set targeting merge
+        run: python scripts/check_adset_targeting_merge.py
+
+      - name: Check lead ad form building
+        run: python scripts/check_lead_ad_form.py
+
+      - name: Check upload widget
+        run: python scripts/check_upload_widget.py
+
+      - name: Check galleries
+        run: |
+          python scripts/check_creative_gallery.py
+          python scripts/check_competitor_gallery.py
+
+      - name: Check public cache discipline
+        run: python scripts/check_public_cache.py
+
+      - name: Check gads stubs stay hidden
+        run: python scripts/check_gads_stubs.py
+
+      - name: Check action suggestions
+        run: python scripts/check_action_suggestions.py
+
+      - name: Check row decoding
+        run: python scripts/check_row_decoding.py
+
+  cli:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Typecheck and build the CLI
+        working-directory: cli
+        run: |
+          npm ci
+          npm run typecheck
+          npm run build

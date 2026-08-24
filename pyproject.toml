@@ -1,0 +1,23 @@
+[project]
+name = "mcp-ads"
+version = "1.0.0"
+description = "Open-source marketing MCP server: Google Ads, Meta Ads, GA4, Search Console, Tag Manager, WordPress, TikTok, Snapchat, Microsoft Advertising and more, driven from any MCP client."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[project.scripts]
+mcp-ads = "server:main"
+
+[tool.setuptools]
+py-modules = [
+  "server", "auth", "credentials", "credentials_env", "cli_api", "platform_oauth",
+  "mcp_instance", "mcp_server", "slim_mcp", "tool_registry", "permissions",
+  "media_app", "creative_app", "competitor_ads_app", "media_upload",
+  "wordpress_generated_sets",
+]
+packages = ["tools", "tools.wordpress"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }

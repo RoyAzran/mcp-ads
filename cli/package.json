@@ -1,0 +1,36 @@
+{
+  "name": "@marketingmcp/cli",
+  "version": "0.1.0",
+  "description": "Local stdio MCP server for MarketingMCP \u2014 proxies tool calls to mcp-ads.com using your API key.",
+  "license": "MIT",
+  "homepage": "https://github.com/RoyAzran/mcp-ads/tree/main/cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RoyAzran/mcp-ads",
+    "directory": "cli"
+  },
+  "bin": {
+    "marketingmcp": "./bin/marketingmcp.js"
+  },
+  "files": [
+    "bin/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node18 --format=cjs --outfile=bin/marketingmcp.js --banner:js=\"#!/usr/bin/env node\" && node -e \"require('fs').chmodSync('bin/marketingmcp.js', 0o755)\"",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "esbuild": "^0.20.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}
