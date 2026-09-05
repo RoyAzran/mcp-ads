@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "mcp-ads",
+  "displayName": "MCP Ads",
+  "version": "1.0.0",
+  "description": "Google Ads, Meta, LinkedIn, TikTok, Snapchat, Microsoft Advertising, GA4 and Search Console as tools for your agent. Read performance, build campaigns, and pause waste — every write waits for your approval.",
+  "author": {
+    "name": "MCP Ads",
+    "url": "https://mcp-ads.com"
+  },
+  "homepage": "https://mcp-ads.com",
+  "repository": "https://github.com/RoyAzran/mcp-ads",
+  "license": "MIT",
+  "keywords": ["ads", "google-ads", "meta-ads", "marketing", "ppc", "analytics", "ga4", "search-console", "grok-bot"],
+  "mcpServers": "./mcp.json",
+  "skills": "./skills"
+}
