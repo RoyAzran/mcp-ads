@@ -1,7 +1,7 @@
 {
   "name": "@marketingmcp/cli",
   "version": "0.1.0",
-  "description": "Local stdio MCP server for MarketingMCP \u2014 proxies tool calls to mcp-ads.com using your API key.",
+  "description": "Local stdio MCP server for MCP Ads (open-source) -- Google Ads, Meta Ads, GA4, Search Console and more from any MCP client. Works against the cloud or your own self-hosted server.",
   "license": "MIT",
   "homepage": "https://github.com/RoyAzran/mcp-ads/tree/main/cli",
   "repository": {
@@ -32,5 +32,27 @@
     "esbuild": "^0.20.0",
     "tsx": "^4.7.0",
     "typescript": "^5.3.0"
-  }
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "claude",
+    "claude-ai",
+    "anthropic",
+    "google-ads",
+    "meta-ads",
+    "facebook-ads",
+    "google-analytics",
+    "ga4",
+    "search-console",
+    "tiktok-ads",
+    "linkedin-ads",
+    "wordpress",
+    "marketing",
+    "advertising",
+    "martech",
+    "ai-agent",
+    "llm-tools"
+  ]
 }

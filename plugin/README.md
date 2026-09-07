@@ -1,6 +1,6 @@
 # MCP Ads plugin
 
-An agent plugin that adds the hosted [MCP Ads](https://mcp-ads.com) server and
+An agent plugin that adds the hosted [MCP Ads](https://mcp-ads.com?utm_source=github&utm_medium=readme&utm_campaign=oss_repo) server and
 an **Ads manager** skill. Works in Cursor, Grok Bot, Grok Build and any client
 that reads the [agent plugin](https://agent-plugins.org) format.
 

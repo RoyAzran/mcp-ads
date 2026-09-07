@@ -14,7 +14,7 @@ dispatchers so your agent loads ~20 tool definitions instead of thousands.
 
 ### ☁️ Cloud — connected in 2 minutes, free tier
 
-Go to **[mcp-ads.com](https://mcp-ads.com)**, sign in, OAuth your ad accounts
+Go to **[mcp-ads.com](https://mcp-ads.com?utm_source=github&utm_medium=readme&utm_campaign=oss_repo)**, sign in, OAuth your ad accounts
 in the browser, and paste one URL into Claude. Done.
 
 - No API applications, no developer tokens, no app reviews — the platform
@@ -108,7 +108,7 @@ over in minutes; some make you apply. This is the real picture:
 | **Creative generation** | 7 | Your OpenAI API key | Minutes |
 
 If that table makes you tired, that's exactly what
-**[the cloud version](https://mcp-ads.com)** is for — the approvals are done,
+**[the cloud version](https://mcp-ads.com?utm_source=github&utm_medium=readme&utm_campaign=oss_repo)** is for — the approvals are done,
 you just connect your accounts.
 
 ## How the tool surface works
