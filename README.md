@@ -1,9 +1,23 @@
-# MCP Ads
+# MCP Ads: Google Ads MCP server + Meta Ads MCP server
 
-**The open-source marketing MCP server.** Run Google Ads, Meta Ads, GA4, Search
-Console, Tag Manager, WordPress and more from Claude, ChatGPT, Cursor, or any
-MCP client — read performance, audit wasted spend, build reports, and launch
-campaigns (created paused until you say otherwise).
+**Open-source (MIT) MCP server for Google Ads, Meta Ads (Facebook & Instagram),
+GA4, Search Console, Tag Manager, TikTok, LinkedIn, Microsoft Ads and more.**
+Works with Claude, Claude Code, ChatGPT, Cursor, Codex, Gemini CLI, or any MCP
+client. Read performance, audit wasted spend, build reports, **and** create or
+change campaigns. Everything it creates starts paused until you say otherwise.
+
+How it compares with the platforms' own servers (September 2026):
+
+| | Google's Google Ads MCP | Meta's Ads MCP | MCP Ads |
+|---|---|---|---|
+| Google Ads | Reporting and diagnostics (read-only) | — | ~755 actions, read and write |
+| Meta Ads | — | Reporting and campaign management | 234 actions, read and write |
+| GA4, Search Console, GTM, TikTok, LinkedIn, Microsoft, Snapchat | — | — | Yes, in the same server |
+| Hosting | Self-host | Hosted by Meta | Self-host (this repo) or [hosted](https://mcp-ads.com?utm_source=github&utm_medium=readme&utm_campaign=oss_repo) |
+
+Use Google's or Meta's server if you only need one platform and want the vendor's
+own code. Use this one if you want one server across platforms, or write access
+to Google Ads.
 
 ~3,100 registered actions across 12+ platforms, exposed through 17 category
 dispatchers so your agent loads ~20 tool definitions instead of thousands.
