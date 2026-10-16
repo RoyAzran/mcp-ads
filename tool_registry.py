@@ -29,6 +29,14 @@ except ImportError:  # pragma: no cover - the self-host build ships without it
         def capture_message(self, *a, **k): pass
         def set_context(self, *a, **k): pass
         def set_tag(self, *a, **k): pass
+        def set_extra(self, *a, **k): pass
+        def set_user(self, *a, **k): pass
+        def set_level(self, *a, **k): pass
+        def push_scope(self):
+            # dispatch() tags each failure inside a scope; without sentry_sdk
+            # installed the scope is a stand-in that accepts the same calls.
+            import contextlib
+            return contextlib.nullcontext(self)
     sentry_sdk = _NoopSentry()  # type: ignore[assignment]
 
 from auth import current_user_ctx
