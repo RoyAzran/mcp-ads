@@ -38,6 +38,13 @@ grok mcp add mcp-ads https://mcp-ads.com/mcp-slim
 claude mcp add --transport http mcp-ads https://mcp-ads.com/mcp-slim
 ```
 
+Or install the whole plugin (server + skill) from this repo's marketplace:
+
+```
+/plugin marketplace add RoyAzran/mcp-ads
+/plugin install mcp-ads@mcp-ads
+```
+
 ## What the server needs
 
 An MCP Ads account (free plan, no card) with at least one ad platform connected

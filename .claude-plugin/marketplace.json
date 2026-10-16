@@ -1,0 +1,21 @@
+{
+  "name": "mcp-ads",
+  "description": "MCP Ads: run Google, Meta, TikTok, LinkedIn and Microsoft Ads from Claude Code.",
+  "owner": {
+    "name": "Roy Azran",
+    "url": "https://mcp-ads.com"
+  },
+  "plugins": [
+    {
+      "name": "mcp-ads",
+      "source": "./plugin",
+      "description": "Ads MCP server (Google Ads, Meta, LinkedIn, TikTok, Snapchat, Microsoft Ads, GA4, Search Console) plus an ads-manager skill.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Roy Azran"
+      },
+      "homepage": "https://mcp-ads.com",
+      "category": "marketing"
+    }
+  ]
+}

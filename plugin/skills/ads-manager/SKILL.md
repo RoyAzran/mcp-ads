@@ -1,9 +1,14 @@
 ---
 name: ads-manager
-description: Read, report on and carefully change paid ad accounts through the mcp-ads MCP server. Use for any question about ad spend, campaign performance, wasted budget, or building and adjusting campaigns on Google Ads, Meta, LinkedIn, TikTok, Snapchat, Microsoft Advertising, GA4 or Search Console.
-when-to-use: The user asks about ad performance, spend, conversions, cost per result, what is wasting money, which channel is working, or wants a campaign built, paused, or re-budgeted. Also for the weekly or daily ad report.
-allowed-tools: mcp-ads:*
-user-invocable: true
+description: Read, report on and carefully change paid ad accounts through the mcp-ads MCP server. Use when the user asks about ad spend, campaign performance, conversions, cost per result, wasted budget or which channel is working, wants a campaign built, paused or re-budgeted, or asks for the weekly or daily ad report, on Google Ads, Meta, LinkedIn, TikTok, Snapchat, Microsoft Advertising, GA4 or Search Console.
+license: MIT
+compatibility: Requires the mcp-ads remote MCP server (https://mcp-ads.com/mcp-slim, OAuth sign-in) or a self-hosted copy from https://github.com/RoyAzran/mcp-ads.
+metadata:
+  author: RoyAzran
+  version: "1.1"
+  homepage: https://mcp-ads.com
+  openclaw:
+    homepage: https://mcp-ads.com
 ---
 
 # Ads manager

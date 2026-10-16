@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mcp-ads": {
+      "type": "http",
+      "url": "https://mcp-ads.com/mcp-slim"
+    }
+  }
+}
