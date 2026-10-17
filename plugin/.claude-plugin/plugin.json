@@ -1,5 +1,6 @@
 {
   "name": "mcp-ads",
+  "displayName": "MCP Ads",
   "version": "1.1.0",
   "description": "Google Ads, Meta, LinkedIn, TikTok, Snapchat, Microsoft Advertising, GA4 and Search Console as tools for Claude, plus an ads-manager skill. Every write waits for your approval.",
   "author": {
@@ -9,6 +10,8 @@
   "homepage": "https://mcp-ads.com",
   "repository": "https://github.com/RoyAzran/mcp-ads",
   "license": "MIT",
+  "privacyPolicyUrl": "https://mcp-ads.com/privacy",
+  "icon": ".claude-plugin/icon.png",
   "keywords": [
     "ads",
     "google-ads",
