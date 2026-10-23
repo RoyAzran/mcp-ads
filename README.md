@@ -28,7 +28,7 @@ coverage change, so check their site before deciding.
 | Platforms | Google Ads | Meta Ads | Meta, Google, TikTok, LinkedIn, Microsoft, Pinterest, Snap, Reddit, plus GA4 and Search Console | Google, Meta, LinkedIn, TikTok, Amazon, ChatGPT Ads | Google, Meta, TikTok, LinkedIn, Microsoft, Snapchat, X, ChatGPT Ads, plus GA4, Search Console, Tag Manager, Merchant Center, WordPress |
 | What it does | Reporting and diagnostics (read-only) | Reporting and campaign management | Ads MCP server across the platforms listed | Hosted agent service that carries out ad tasks | Read and write: 755 Google Ads actions, 230 Meta Ads actions |
 | Hosting | Self-host, with your own developer token | Hosted by Meta | Hosted; open-source Meta server also available | Hosted | [Hosted](https://mcp-ads.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_repo) or self-host (this repo, MIT) |
-| Pricing | Free software; you supply the API access | Check Meta's site | Free tier; paid plans by number of ad-account slots | Per-task pricing with a small free tier | $49/month flat, 3-day free trial ([see pricing](https://mcp-ads.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=oss_repo)); self-hosting is free |
+| Pricing | Free software; you supply the API access | Check Meta's site | Free tier; paid plans by number of ad-account slots | Per-task pricing with a small free tier | $49/month flat, 7-day free trial ([see pricing](https://mcp-ads.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=oss_repo)); self-hosting is free |
 
 Use Google's or Meta's server if you only need one platform and want the vendor's
 own code. Use this one if you want one server across platforms, write access
@@ -46,7 +46,7 @@ in the browser, and paste one URL into Claude. Done.
 - No API applications, no developer tokens, no app reviews — the platform
   approvals (Google Ads developer token, Meta App Review, and the rest) are
   already in place
-- $49/month flat for every platform, with a 3-day free trial
+- $49/month flat for every platform, with a 7-day free trial
   ([see pricing](https://mcp-ads.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=oss_repo) for the current offer)
 - Your credentials stored encrypted; revoke any time from the dashboard
 
