@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.mcp-ads/mcp-ads",
+  "title": "MCP Ads",
+  "description": "Run Google Ads, Meta, TikTok, LinkedIn, GA4 & Search Console from chat. Changes wait for approval.",
+  "version": "1.0.2",
+  "websiteUrl": "https://mcp-ads.com",
+  "repository": {
+    "url": "https://github.com/RoyAzran/mcp-ads",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://mcp-ads.com/static/app/static/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    },
+    {
+      "src": "https://mcp-ads.com/static/apple-touch-icon.png",
+      "mimeType": "image/png",
+      "sizes": ["180x180"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-ads.com/mcp-slim"
+    }
+  ]
+}
